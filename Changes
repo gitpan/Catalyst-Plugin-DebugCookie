@@ -1,3 +1,6 @@
 
+0.999002  2008-10-02 
+        - up Catalyst dep b/c this requires Catalyst::Stats 
+
 0.999001  2008-06-25 
         - initial release

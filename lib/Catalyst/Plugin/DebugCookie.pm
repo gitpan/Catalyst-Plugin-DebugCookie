@@ -6,7 +6,7 @@ use 5.008001;
 use Class::C3;
 use Catalyst::Plugin::DebugCookie::Util qw/check_debug_cookie_value/;
 
-our $VERSION = '0.999001';
+our $VERSION = '0.999002';
 
 =head1 NAME
 

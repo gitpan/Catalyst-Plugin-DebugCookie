@@ -3,7 +3,7 @@ use inc::Module::Install '0.68';
 name 'Catalyst-Plugin-DebugCookie';
 all_from 'lib/Catalyst/Plugin/DebugCookie.pm';
 
-requires 'Catalyst' => '5.7007';
+requires 'Catalyst' => '5.7014';
 requires 'Class::C3' => '0.19';
 requires 'Digest::MD5';
 requires 'Sub::Exporter';

@@ -20,10 +20,10 @@ no_index:
     - inc
     - t
 requires:
-  Catalyst: 5.7007
+  Catalyst: 5.7014
   Class::C3: 0.19
   Digest::MD5: 0
   Sub::Exporter: 0
   perl: 5.8.1
 tests: t/*.t
-version: 0.999001
+version: 0.999002
