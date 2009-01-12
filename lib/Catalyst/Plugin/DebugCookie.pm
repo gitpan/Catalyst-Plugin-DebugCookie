@@ -6,7 +6,7 @@ use 5.008001;
 use Class::C3;
 use Catalyst::Plugin::DebugCookie::Util qw/check_debug_cookie_value/;
 
-our $VERSION = '0.999002';
+our $VERSION = '0.999003';
 
 =head1 NAME
 
@@ -99,7 +99,7 @@ set based on cookie and query param
 sub debug { 
 	my $self = shift;
 	if (ref $self) { 
-		return $self->{debug} ||= $self->valid_debug_mode; 
+		return $self->next::method(@_) || $self->valid_debug_mode; 
 	} else {
 		$self->next::method(@_); 
 	}

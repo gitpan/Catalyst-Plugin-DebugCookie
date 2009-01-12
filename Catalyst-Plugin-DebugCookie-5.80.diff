@@ -1,0 +1,32 @@
+Index: lib/Catalyst/Plugin/DebugCookie.pm
+===================================================================
+--- lib/Catalyst/Plugin/DebugCookie.pm	(revision 9055)
++++ lib/Catalyst/Plugin/DebugCookie.pm	(working copy)
+@@ -6,7 +6,7 @@
+ use Class::C3;
+ use Catalyst::Plugin::DebugCookie::Util qw/check_debug_cookie_value/;
+ 
+-our $VERSION = '0.999002';
++our $VERSION = '0.999003';
+ 
+ =head1 NAME
+ 
+@@ -99,7 +99,7 @@
+ sub debug { 
+ 	my $self = shift;
+ 	if (ref $self) { 
+-		return $self->{debug} ||= $self->valid_debug_mode; 
++		return $self->next::method(@_) || $self->valid_debug_mode; 
+ 	} else {
+ 		$self->next::method(@_); 
+ 	}
+Index: Changes
+===================================================================
+--- Changes	(revision 9055)
++++ Changes	(working copy)
+@@ -1,3 +1,5 @@
++0.999003
++        - Fix to work correctly with Catalyst 5.80
+ 
+ 0.999002  2008-10-02 
+         - up Catalyst dep b/c this requires Catalyst::Stats 
