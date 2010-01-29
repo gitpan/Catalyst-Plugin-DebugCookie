@@ -4,7 +4,7 @@ name 'Catalyst-Plugin-DebugCookie';
 all_from 'lib/Catalyst/Plugin/DebugCookie.pm';
 
 requires 'Catalyst' => '5.7014';
-requires 'Class::C3' => '0.19';
+requires 'MRO::Compat' => '0.07';
 requires 'Digest::MD5';
 requires 'Sub::Exporter';
 

@@ -3,10 +3,10 @@ package Catalyst::Plugin::DebugCookie;
 use strict;
 use warnings;
 use 5.008001;
-use Class::C3;
+use MRO::Compat;
 use Catalyst::Plugin::DebugCookie::Util qw/check_debug_cookie_value/;
 
-our $VERSION = '0.999003';
+our $VERSION = '0.999004';
 
 =head1 NAME
 

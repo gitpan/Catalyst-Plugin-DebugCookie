@@ -2,7 +2,7 @@ package Catalyst::Plugin::DebugCookie::Util;
 
 use strict;
 use warnings;
-use Class::C3;
+use MRO::Compat;
 use Digest::MD5 qw(md5_hex);
 use Sub::Exporter
     -setup => { exports => [ qw(make_debug_cookie check_debug_cookie_value) ] };

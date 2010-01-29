@@ -1,4 +1,3 @@
-Catalyst-Plugin-DebugCookie-5.80.diff
 Changes
 inc/Module/AutoInstall.pm
 inc/Module/Install.pm
